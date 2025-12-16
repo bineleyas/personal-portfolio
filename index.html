@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muhammad Usama | Learning Journey</title>
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+    <header>
+        <h1>My Portfolio Page</h1>
+        <h3>Day Five of Creating My Portfolio Using HTML</h3>
+
+        <p>
+            This is my <strong>sixth exercise</strong> focused on creating a complete webpage using 
+            <em>HTML only</em>. I continuously update this page as I learn new concepts.
+        </p>
+
+        <p>
+            I am learning independently, so errors are expected. I will move on to learning 
+            <em>External CSS</em> next. I have already gone through inline and internal CSS.
+        </p>
+
+        <p>
+            I am a beginner aiming to transition my career from a 
+            <span class="highlight-role">Research Associate</span> to a 
+            <strong>Web Developer</strong>.
+        </p>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I hold a Master's degree in Biochemistry and have worked as a Research Associate in 
+                Industrial Biotechnology. I also hold a Bachelor of Education degree.
+            </p>
+
+            <ul>
+                <li>Introvert personality</li>
+                <li>Prefers personal space</li>
+                <li>Highly self-motivated</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>My Skills</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level (1–5)</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Typing</td>
+                        <td>3</td>
+                        <td>Tool Skill</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>3</td>
+                        <td>Technical Skill</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>2</td>
+                        <td>Technical Skill</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">End of Skills Table</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Tools & Links Section -->
+        <section>
+            <h2>Tools, Images & Links</h2>
+
+            <p>I work with Obsidian and Visual Studio Code.</p>
+
+            <figure>
+                <img src="images/obsidian1.png" alt="Working with Obsidian" width="300" height="200">
+                <figcaption>Note-taking with Obsidian</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/finaltask2.png" alt="Writing code in VS Code" width="300" height="200">
+                <figcaption>Writing code in VS Code</figcaption>
+            </figure>
+
+            <p>Useful Links:</p>
+            <ul>
+                <li><a href="https://www.github.com/bineleyas" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/bineleyas" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section>
+            <h2>Contact Me</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                    <label for="tel">Contact Number</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="Enter contact number"><br><br>
+
+                    <p>Select Gender:</p>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"> Other
+                    </label>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>&copy; 2025 Muhammad Usama</p>
+    </footer>
+
+</body>
+</html>
