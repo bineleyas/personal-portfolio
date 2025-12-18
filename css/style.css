@@ -107,6 +107,23 @@ thead th {
     background-color: #f2f2f2;
 }
 
+.image-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.image-group figure {
+    flex: 1;
+}
+
+.image-group img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 a {
     color: #0066cc;
     text-decoration: none;
