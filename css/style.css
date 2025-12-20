@@ -42,8 +42,14 @@ li {
 
 header {
     background-color: #f4f4f4;
-    padding: 30px 20px 0;
+    padding: 30px 0;
     margin-bottom: 40px;
+ }
+
+ .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
  }
 
 header h1 {
@@ -133,10 +139,101 @@ a:hover {
     text-decoration: underline;
 }
 
+form {
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 16px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+fieldset p {
+    margin-bottom: 8px;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+fieldset label + label {
+    margin-top: 6px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    display: inline-block;
+    background-color: #f2f2f2;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #e6e6e6;
+}
+
 footer {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid #ddd;
     color: #666;
     font-size: 0.9rem;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin-left: 2px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
 }
