@@ -19,7 +19,7 @@ body {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
  }
 
 section h2 {
@@ -61,36 +61,46 @@ header h3 {
 }
 
 header p {
-    max-width: 700px;
     margin-bottom: 10px;
+}
+
+.highlight-role {
+    color: #444;
 }
 
 .articles {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 article {
-    margin-top: 30px;
     padding: 20px;
     background-color: #fafafa;
     border-radius: 4px;
-    flex: 1 1 45%; 
+    flex: 1 1 100%; 
     border: 1px solid #eee;
 }
 
 article p {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 article:hover {
     background-color: #f5f5f5;
 }
 
+article ul {
+    margin-top: 6px;
+}
+
+article li  {
+    margin-bottom: 4px;
+}
+
 article h3 {
     font-size: 1.2rem;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 table {
@@ -107,6 +117,12 @@ th, td {
 
 thead th {
     background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .image-group {
@@ -158,10 +174,6 @@ fieldset label {
     font-weight: normal;
 }
 
-fieldset label + label {
-    margin-top: 6px;
-}
-
 legend {
     padding: 0 8px;
     font-weight: bold;
@@ -180,7 +192,7 @@ input[type="email"],
 input[type="tel"] {
     width: 100%;
     padding: 8px 10px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -213,15 +225,11 @@ footer {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
     margin-bottom: 20px;
 }
 
 .nav-list {
     list-style: none;
-    display: flex;
-    gap: 20px;
     padding-left: 0;
     margin-left: 2px;
 }
@@ -238,4 +246,30 @@ nav {
 .nav-list li a:hover {
     color: #000;
     border-bottom-color: #000;
+}
+
+/* ==== Desktop Navigation ==== */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 20px;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    .articles {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    article {
+        flex: 1 1 45%;
+    }
 }
