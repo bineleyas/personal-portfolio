@@ -48,20 +48,27 @@ li {
     padding: 40px 0;
  }
 
-header h1 {
+.site-header h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    line-height: 1.2;
 }
 
-header h3 {
-    font-size: 1rem;
+.site-header h3 {
+    font-size: 0.95em;
     font-weight: normal;
-    color: #555;
-    margin-bottom: 20px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.3;
 }
 
-header p {
-    margin-bottom: 10px;
+.site-header p {
+    margin-bottom: 8px;
+}
+
+.site-header p:first-of-type {
+    margin-top: 20px;
 }
 
 .highlight-role {
@@ -121,7 +128,6 @@ thead th {
 
 img {
     max-width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -130,16 +136,28 @@ img {
     gap: 20px;
     margin-top: 15px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .image-group figure {
-    flex: 1;
+    flex: 1 1 100%;
+    overflow: hidden;  
+}
+
+.image-group figcaption {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-style: italic;
+    text-align: center;
+    color: #666;
 }
 
 .image-group img {
     width: 100%;
-    height: auto;
-    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
 a {
@@ -272,4 +290,7 @@ nav {
     article {
         flex: 1 1 45%;
     }
+
+    .image-group figure {
+        flex: 1 1 45%;
 }
