@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Usama | Frontend Development Portfolio</title>
+    <meta name="description" content="Frontend web developer specializing in clean, responsive websites using semantic HTML and modern CSS. Focused on structure, usability, and accessibility.">
+    <title>Muhammad Usama - Frontend Web Developer (HTML & CSS)</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -12,26 +16,34 @@
     <!-- ===== Header ===== -->
     <header class="site-header">
         <div class="container">
-        <div class="logo">MU</div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#tools-links">Tools & Links</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Muhammad Usama</h1>
-            <h2>Aspiring front-end web developer</h2>
 
-            <p>
-                I am building this portfolio as part of my transition into frontend web development, focusing on clean structure, responsive layouts, and practical implementation of core web technologies.
-            </p>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/favicon.png" alt="MU logo">
+            </div>
 
-            <p>
-                My background is in Biochemistry, with experience as a Research Associate in Industrial Biotechnology, where I worked in structured, process-driven environments. I am now applying the same analytical thinking and attention to detail to frontend web development, with emphasis on clarity, maintainability, and real-world usability.
-            </p>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>               
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Muhammad Usama</h1>
+            <h2>Frontend Web Developer</h2>
+            <p>Building clean, responsive websites using HTML &amp; CSS with focus on structure and usability.</p>
         </div>
     </header>
 
@@ -41,178 +53,131 @@
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                I am interested in building web projects that are clean, functional, and technically sound. I value clarity in code and design, and I prefer solutions that make sense to both users and developers. My goal is to create work that follows good practices and holds up to practical, real-world use.
-            </p>
+            <p>I am a frontend web developer focused on building clean, responsive, and well-structured websites using HTML and CSS.</p>
 
             <ul>
-                <li>Prefers focused, distraction-free work environments</li>
-                <li>Approaches problems methodically and step by step</li>
-                <li>Values clean structure and readable code</li>
+                <li>Strong understanding of semantic HTML and modern CSS</li>
+                <li>Focus on clean structure and readable code</li>
+                <li>Comfortable building responsive layouts without frameworks</li>
             </ul>
         </section>
 
-        <!-- Experience & Creative Work Section -->
-         <section id="experience">
-            <h2>Experience & Applied Work</h2>
-           
-            <div class="articles">
-                <article>
-                    <h3>Research & Analytical Experience</h3>
-                    <p>Experience in research-oriented environments requiring structured thinking, clear documentation, and careful execution of processes. Work involved planning tasks, analyzing results, and improving workflows through observation and iteration.</p>
-                    <ul>
-                        <li>Breaking down complex tasks into manageable steps</li>
-                        <li>Analyzing outcomes and refining processes</li>
-                        <li>Maintaining clear documentation and structured workflows</li>
-                    </ul>
+        <!-- Projects Section -->
+         <section id="projects">
+            <h2>Projects</h2>
+           <div class="articles">
+                <article class="project">  
+                   <h3>Personal Portfolio</h3>
+                   <p>A self-initiated personal portfolio website built using semantic HTML and CSS, focused on applying clean structure, readability, and responsive layouts.</p>
+                   <ul>
+                    <li>HTML &amp; CSS</li>
+                    <li>Responsive Layout</li>
+                    <li>Github Pages deployment</li>
+                   </ul>
                 </article>
-                <article>
-                    <h3>WordPress & Writing</h3>
-                    <p> Managing a personal WordPress blog since 2018, with published content across multiple topics and formats. Experience includes working with WordPress themes, plugins, and SEO fundamentals.</p>
+
+                <article class="project">
+                    <h3>BluePeak Studio</h3>
+                    <p>A mock landing page project created to apply multi-section layout design using HTML and CSS, with emphasis on spacing and visual hierarchy.</p>
                     <ul>
-                        <li>200+ published posts (poetry & fiction)</li>
-                        <li>WordPress site management & theme customization</li>
-                        <li>Foundational understanding of SEO practices</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Music & Audio Content (Pixabay)</h3>
-                    <p>Creating and publishing royalty-free music and audio content since 2020, exploring multiple genres including Classical Indian, pop, jazz, and country.</p>
-                    <ul>
-                        <li>1.09M views and 143K downloads on the platform</li>
-                        <li>Use of modern AI tools within the creative workflow</li>
-                        <li>Foundational Sound design knowledge</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Graphic Design & Digital Art</h3>
-                    <p>Creating digital art and graphic design work since 2019, primarily using Canva for visual content and layout design.</p>
-                    <ul>
-                        <li>Posters and logo design</li>
-                        <li>Social media graphics</li>
-                        <li>Digital illustrations</li>
+                        <li>Multi-section layout</li>
+                        <li>Modern CSS styling</li>
+                        <li>Responsive navigation</li>
                     </ul>
                 </article>
             </div>
          </section>
 
-
         <!-- Skills Section -->
         <section id="skills">
-            <h2>My Skills</h2>
+            <h2>Skills</h2>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Level (1–5)</th>
-                        <th>Category</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Typing</td>
-                        <td>4</td>
-                        <td>General Skill</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>3</td>
-                        <td>Technical Skill</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>3</td>
-                        <td>Technical Skill</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="3">End of Skills Table</td>
-                    </tr>
-                </tfoot>
-            </table>
+           <div class="skills-grid">
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                <span class="skill-text">HTML5</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                <span class="skill-text">CSS3</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fab fa-github"></i></span>
+                <span class="skill-text">GitHub</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fas fa-code"></i></span>
+                <span class="skill-text">Visual Studio Code</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fab fa-wordpress"></i></span>
+                <span class="skill-text">WordPress</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-icon"><i class="fas fa-pencil-ruler"></i></span>
+                <span class="skill-text">UI/UX Basics</span>
+            </div>
+           </div>
         </section>
 
-        <!-- Tools & Links Section -->
-        <section id="tools-links">
-            <h2>Tools, Images & Links</h2>
-
-            <p>Primary tools used for note-taking, development and version control include Obsidian, Visual Studio Code and GitHub.</p>
-
-           <div class="image-group"> 
-            <figure>
-                <img src="images/obsidian-notes.png" alt="Note-taking in Obsidian">
-                <figcaption>Planning and structured note-taking in Obsidian</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/html-structure.png" alt="HTML Structure in VS Code">
-                <figcaption>Building page structure using semantic HTML</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/css-layout.png" alt="CSS Layout in VS Code">
-                <figcaption>Styling layouts and responsiveness with CSS</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/github-commits.png" alt="Github commit history">
-                <figcaption>Tracking progress through meaningful GitHub commits</figcaption>
-            </figure>
-            </div>
-
-            <p>Useful Links:</p>
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
             <ul>
-                <li><a href="https://www.github.com/bineleyas" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/bineleyas" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://bineleyas.wordpress.com" target="_blank" rel="noopener noreferrer">WordPress</a></li>
-                <li><a href="https://pixabay.com/users/bineleyas" target="_blank" rel="noopener noreferrer">Pixabay</a></li>
+                <li><strong>MPhil Biochemistry</strong> - University of Veterinary &amp; Animal Sciences, Lahore (2020-2022)</li>
+                <li><strong>B.Ed</strong> - Virtual University of Pakistan (2021-2023)</li>
             </ul>
         </section>
 
         <!-- Contact Form Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
+            <p>If you'd like to discuss a project or opportunity, feel free to reach out.</p>
 
-            <form>
-                <fieldset>
-                    <legend>Personal Information</legend>
+            <form action="https://formspree.io/f/xeegpwdz" method="POST">
+                              
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <label for="tel">Contact Number</label>
-                    <input type="tel" id="tel" name="tel" placeholder="Enter contact number">
-
-                    <p>Select Gender:</p>
-
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </fieldset>
-
-                <br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
+                <input type="submit" value="Send Message">
             </form>
         </section>
 
     </main>
 
     <!-- ===== Footer ===== -->
-    <footer class="container">
-        <p>&copy; 2025 Muhammad Usama</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+        <p class="footer-text">&copy; 2025 Muhammad Usama</p>
+        <ul class="footer-icons">
+            <li>
+                <a href="https://github.com/bineleyas" target="_blank" rel="noopener noreferrer" aria-label="Github">
+                <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/bineleyas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://bineleyas.wordpress.com/" target="_blank" rel="noopener noreferrer" aria-label="WordPress">
+                <i class="fab fa-wordpress"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bineleyas@gmail.com"target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                </a> 
+            </li>
+        </ul>
+        </div>
     </footer>
 
 </body>
